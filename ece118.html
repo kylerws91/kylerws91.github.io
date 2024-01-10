@@ -53,19 +53,19 @@
                         <div class="inner">
                             <div class="content">
                                 <h2 class="major">Mechanical Design and Layout</h2>
-                                <p>The mechanical design phase initiated with an in-depth collaborative discussion and brainstorming of individual concepts. Our final design consistented of three layers of MDF laser cut to minimize weight and complexity. Using SolidWorks, we laid out our sensors that made the most intuitive sense. We had four bumper sensors next to our motors on the first layer with some supports 1/8'' off the ground. The second layer contains a micro-controller, a simple tank circuit and a color sensor. The top layer contains a beacon detector circuit, two tape sensor circuits as well as the launching mechanism. Each piece is laser cut and fabricated by hand./</p>
+                                <p>The mechanical design phase initiated with an in-depth collaborative discussion and brainstorming of individual concepts. Our final design consistented of three layers of MDF laser cut to minimize weight and complexity. Using SolidWorks, we laid out our sensors that made the most intuitive sense. We had four bumper sensors next to our motors on the first layer with some supports 1/8'' off the ground. The second layer contains a micro-controller, a simple tank circuit and two spaced color sensors. The top layer contains a beacon detector circuit, two tape sensor circuits as well as the launching mechanism. Each piece is laser cut and fabricated by hand.</p>
                             </div>
                             <a href="#" class="image"><img src="images/Mechanical.png" alt="Mechanical Design" /></a>
                         </div>
                     </section>
 
-                    <!-- Section for Electrical Engineering -->
+                    <!-- Section for Electrical Design -->
                     <section id="three" class="wrapper spotlight style3">
                         <div class="inner">
-                            <a href="#" class="image"><img src="images/electrical_engineering.jpg" alt="Electrical Engineering" /></a>
+                            <a href="#" class="image"><img src="images/Simp.png" alt="Electrical Engineering" /></a>
                             <div class="content">
-                                <h2 class="major">Electrical Engineering</h2>
-                                <p>This component involved the meticulous assembly and integration of all electrical elements. From designing analog filters to pick up specific signals, to configuring power distribution boards for appropriate voltage ratings, every part was crafted with precision. This ensured the effective and efficient functioning of the robot, highlighting the project's innovative engineering prowess.</p>
+                                <h2 class="major">Electrical Design</h2>
+                                <p>The vast majority of electrical design concerns sensor integration and interfacing to be read by the micro-controller. For example, we designed a beacon detector that utilized a phototransistor in order to detect frequencies from the towers. To interface this sensor, we had to amplify the signal using several operational amplifiers to get a readable analog value. In addition, because of the addition of inference signals, we had to develop a 4th order chebyshev bandpass filter tuned to filter out frequencies with the maximum roll-off beyond our 2.0-2.4 kHz allowed range. From the magnitude of the signal we could detect and adapt the robot's behaviour. Several other circuits applied a similar concept of amplifying and fine-tuning with trial and error.</p>
                             </div>
                         </div>
                     </section>
@@ -75,20 +75,9 @@
                         <div class="inner">
                             <div class="content">
                                 <h2 class="major">Software Development</h2>
-                                <p>The heart of our robot's functionality lies in its software, encompassing programming for motors, infrared sensors, servos, and bumper mechanisms. An intelligent state machine algorithm forms the behavioral backbone of the robot, enabling it to interact with its environment in a meaningful and goal-oriented manner. The implementation of various states and behaviors presented challenges but ultimately led to a responsive and capable autonomous robot.</p>
+                                <p>The software behaviour is developed on an event and services framework all written in C. This particular robot uses a hierarchical state machine to organize it's behaviour and uses sensor readings to transition. An event and services framework built off implementing interrupt functionality determined priority of phenomena with plenty of edge cases.</p>
                             </div>
                             <a href="#" class="image"><img src="images/software_development.jpg" alt="Software Development" /></a>
-                        </div>
-                    </section>
-
-                    <!-- Section for Conclusion -->
-                    <section id="five" class="wrapper spotlight style5">
-                        <div class="inner">
-                            <a href="#" class="image"><img src="images/challenges_solutions.jpg" alt="Challenges and Solutions" /></a>
-                            <div class="content">
-                                <h2 class="major">Conclusion</h2>
-                                <p>The project concluded with the successful integration of the three-layer configuration for our robot, addressing challenges like wheel alignment and signal interference. The adjustments and redesigns significantly enhanced our robot's navigation and alignment capabilities, demonstrating the project's success in fostering a deeper understanding and appreciation of the multifaceted field of mechatronics.</p>
-                            </div>
                         </div>
                     </section>
                     <section id="six" class="wrapper spotlight style5">
