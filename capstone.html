@@ -1,32 +1,54 @@
-<!DOCTYPE HTML>
+<<!DOCTYPE HTML>
 <html>
 <head>
-    <title>SlugSpot Project Summary</title>
+    <title>Capstone Project - Parking Spot Detector</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="is-preload">
-    <div id="page-wrapper">
-        <!-- Header -->
-        <header id="header" class="alt">
-            <h1><a href="index.html">SlugSpot Parking Spot Detector</a></h1>
-        </header>
 
-        <!-- Banner -->
-        <section id="banner">
-            <div class="inner">
-                <h2>SlugSpot: Efficient Parking Spot Detection</h2>
-                <p>Revolutionizing parking experience on university campuses</p>
-            </div>
-        </section>
+    <!-- Page Wrapper -->
+        <div id="page-wrapper">
 
+            <!-- Header -->
+                <header id="header" class="alt">
+                    <h1><a href="index.html">SlugSpot</a></h1>
+                    <nav>
+                        <a href="#menu">Menu</a>
+                    </nav>
+                </header>
+
+            <!-- Menu -->
+                <nav id="menu">
+                    <!-- ... existing menu items ... -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ece118.html">Robot Competition Project</a></li>
+                    <li><a href="capstone.html">Capstone Parking Spot Detector</a></li>
+                    <li><a href="glove.html">Glove Controlled Nail Gun</a></li>
+                    <li><a href="spi.html">Wired Communication From Scratch</a></li>
+                </nav>
+
+            <!-- Banner -->
+                <section id="banner">
+                    <div class="inner">
+                        <div class="logo"><span class="icon fa-gem"></span></div>
+                        <h2>SlugSpot: Efficient Parking Spot Detection</h2>
+                        <p>Revolutionizing parking experience on university campuses</p>
+                    </div>
+                </section>
         <!-- Main Content -->
         <section id="wrapper">
             <!-- Project Overview -->
             <section class="wrapper spotlight style1">
                 <div class="inner">
-                    <h2 class="major">Project Overview</h2>
-                    <p>The SlugSpot project aims to solve parking challenges on university campuses through innovative sensor technology. Utilizing ultrasonic and inductive sensors, SlugSpot detects the presence of parked vehicles and transmits this information to a central system for easy access via a web interface.</p>
+                    <h2 class="major">Problem Statement</h2>
+                    <p>On college and university campuses, the perennial problem of locating available parking spots has
+                        persisted. Ongoing challenges give rise to frustration, wasted time, and heightened stress. Individuals
+                        often spend precious minutes searching for a coveted parking spot. The graph below substantiates the
+                        assertion that individuals on the UCSC campus typically spend approximately 20 minutes to locate an
+                        open parking spot.ic and inductive sensors, SlugSpot detects the presence of parked vehicles and transmits this information to a central system for easy access via a web interface.</p>
                 </div>
             </section>
 
@@ -58,9 +80,39 @@
         <!-- Footer -->
         <section id="footer">
             <div class="inner">
+                <h2 class="major">Get in touch</h2>
+                <p>Use the format below to shoot me a message for any reason at all.</p>
+                <form method="post" action="sendEmail.php">
+                    <div class="fields">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" />
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" />
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Send Message" /></li>
+                    </ul>
+                </form>
+                
                 <ul class="contact">
-                    <li class="icon solid fa-home">University Address</li>
-                    <li class="icon solid fa-envelope"><a href="mailto:contact@slugspot.edu">contact@slugspot.edu</a></li>
+                    <li class="icon solid fa-home">
+                        Address<br />
+                        808 Seal Pointe Dr.<br />
+                        Redwood City, CA 94065
+                    </li>
+                    <li class="icon solid fa-phone">(650) 445-8540</li>
+                    <li class="icon solid fa-envelope"><a href="#">kylerws91@gmail.com</a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                 </ul>
             </div>
         </section>
